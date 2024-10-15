@@ -13,21 +13,24 @@ html {
     box-sizing: inherit;
 }
 
-body{
+.hero {
     min-height: min-content;
     background: url(heropic.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     padding-right: 0px;
+    height: 100vh;
 
 }
 
 .header {
-    position: sticky;
-    top: 0px;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
     padding: 0 50px;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .header a {
@@ -59,14 +62,14 @@ body{
 }
 
 .navbar a::before {
- content: ' ';
- position: absolute;
- top: 100%;
- left: 0;
- width: 0;
- height: 2px;
- background: #094c09;
- transition: 1s;
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #094c09;
+    transition: 1s;
  
 }
 
@@ -74,3 +77,17 @@ body{
     width: 100%;
 }
 
+
+.hero {
+
+}
+
+.hero pre{
+    color: white;
+    font-size: 4.5rem;
+}
+
+.test {
+    background-color: #094c09;
+    height: 100vh;
+}
