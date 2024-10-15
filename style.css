@@ -126,3 +126,46 @@ html {
     margin-top: -60px;
 }
 
+/* workflow div styling */
+.workflow {
+    height: 90vh;
+    background-color: whitesmoke;
+    padding: 100px;
+}
+
+/* wheel image styling */
+.workflow-column-content img{
+    height: 70px;
+}
+
+/* align workflow column content */
+.workflow-column-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* workflow-text styling */
+
+.workflow-text p {
+    font-size: 25px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.workflow-text li {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* styling and aliging image in workflow */
+.workflow {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#workflow-img {
+    height: 600px;
+    align-self: center;
+}
