@@ -101,9 +101,10 @@ html {
     justify-content: center;
 }
 
+/* position hero text */
 .hero .hero-text{
     align-self: flex-end;
-    margin-right: 18rem;
+    margin-right: 15rem;
 }
 
 /* Style and position button */
@@ -115,13 +116,13 @@ html {
     width: 26rem;
 
     align-self: flex-end;
-    margin-top: -20px;
+    margin-top: -60px;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
 
-    margin-top: -40px;
+    margin-top: -60px;
 }
 
