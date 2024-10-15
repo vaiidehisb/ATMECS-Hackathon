@@ -115,10 +115,16 @@ html {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
-    width: 26rem;
+    width: calc((26rem - 20px / 2));
 
-    align-self: flex-end;
     margin-top: -60px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    width: 26rem;
+    align-self: flex-end;
 }
 
 .hero-text {
@@ -307,4 +313,8 @@ html {
 
 .contact-us-text {
     font-size: 30px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2e461d2defe56af04be88d6a1f77cbbd91184038
