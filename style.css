@@ -207,3 +207,43 @@ html {
     margin-top: 20px;
 
 }
+
+/* contact-us div styling */
+
+.contact-us {
+    height: 100vh;
+    background-color: #051805;
+    padding: 80px;
+}
+
+/* position and style contact us */
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90px;
+}
+
+/* e cell logo style */
+.contact-us img {
+    height: 500px;
+}
+
+/* contact us text style and position */
+
+.contact-us pre {
+    color: white;
+}
+
+.contact-us-text-header {
+    font-size: 70px;
+}
+
+.contact-us-text-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-text {
+    font-size: 30px;
+}
