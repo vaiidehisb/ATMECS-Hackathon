@@ -13,6 +13,7 @@ html {
     box-sizing: inherit;
 }
 
+/* backgrond image to hero */
 .hero {
     min-height: min-content;
     background: url(heropic.jpg) no-repeat;
@@ -23,6 +24,7 @@ html {
 
 }
 
+/* header stays fixed to top */
 .header {
     position: fixed;
     display: flex;
@@ -33,6 +35,7 @@ html {
     left: 0;
 }
 
+/* align items in navbar */
 .header a {
     display: flex;
     align-items: center;
@@ -51,7 +54,7 @@ html {
     margin-top: 2px;
 }
 
-
+/* styling navbar anchor tags */
 .navbar a {
     position: relative;
     font-size: 18px;
@@ -77,17 +80,21 @@ html {
     width: 100%;
 }
 
-
-.hero {
-
-}
-
+/* style hero text */
 .hero pre{
     color: white;
     font-size: 4.5rem;
 }
 
-.test {
-    background-color: #094c09;
-    height: 100vh;
+/* position sticky */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.hero .hero-text{
+    align-self: flex-end;
+    margin-right: 18rem;
+}
+
