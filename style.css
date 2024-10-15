@@ -13,6 +13,14 @@ html {
     box-sizing: inherit;
 }
 
+.btn {
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
 /* backgrond image to hero */
 .hero {
     min-height: min-content;
@@ -96,5 +104,24 @@ html {
 .hero .hero-text{
     align-self: flex-end;
     margin-right: 18rem;
+}
+
+/* Style and position button */
+.hero-text button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 26rem;
+
+    align-self: flex-end;
+    margin-top: -20px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: -40px;
 }
 
