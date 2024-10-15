@@ -24,7 +24,7 @@ html {
 /* backgrond image to hero */
 .hero {
     min-height: min-content;
-    background: url(heropic.jpg) no-repeat;
+    background: url(./images/heropic.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     padding-right: 0px;
@@ -168,4 +168,42 @@ html {
 #workflow-img {
     height: 600px;
     align-self: center;
+}
+
+/* project-op styling */
+.project-op {
+    background-color: white;
+    height: 100vh;
+    padding: 90px;
+}
+
+/* styling cards */
+.card {
+    width: calc((100vw - 280px) / 3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card .text-content {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+/* positioning cards */
+
+.cards {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+
 }
