@@ -8,6 +8,9 @@ const app = express();
 // Middleware to handle form data
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +31,22 @@ app.get('/', (req, res) => {
     res.render('index', { target: null, failure: null });
 });
 
+
+app.get('/predict', (req, res) => {
+    // res.render('predict'); // Ensure you have a 'predict.ejs' or 'predict.html' file
+    res.render('predict', { target: null, failure: null });
+});
+
+app.get('/chatbot', (req, res) => {
+    res.render('chatbot'); // Ensure you have a 'chatbot.ejs' or 'chatbot.html' file
+});
+
+
+
+
+
+
+
 // Dummy predict function (replace this later with the actual ML model logic)
 function predict(air_temp, process_temp, rotational_speed, torque, tool_wear, type) {
     return ['Predicted Target', 'Predicted Failure Type'];
@@ -36,5 +55,5 @@ function predict(air_temp, process_temp, rotational_speed, torque, tool_wear, ty
 // Server setup
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(⁠ Server started on http://localhost:${PORT} ⁠);
+    console.log(`⁠ Server started on http://localhost:${PORT} ⁠`);
 });
